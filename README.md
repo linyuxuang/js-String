@@ -70,4 +70,43 @@ substring() 用法：stringObj.substring(start, end)
 		  	 console.log(str.substring(2,3))   // l
 	   
 	   
+ indexOf返回字从（左往右）的字符串第一次出现的位置，若没有出现返回-1  
+
+		 var str = "hello world";
+		  console.log(str.indexOf("o"))//显示4
+		  console.log(str.indexOf("i"))//显示-1                    
+
+
+lastIndexOf
+lastIndexOf()方法返回（从右向左）出现某个字符或字符串的首个字符索引值（与indexOf相反）
+
+			 var str = "hello world";
+			  console.log(str.indexOf("o"))//显示7
+			  console.log(str.indexOf("i"))//显示-1  
+		
+
+indexOf()与lastIndexOf()有两个参数时     注意看下面
+
+
+		  	var str="hello world";
+		  	 console.log(str.indexOf("o",6))   // 7
+		  	 console.log(str.lastIndexOf("o",6))  //4
+
+
                      
+		  	var strVal="abcdefacdfghajk";
+		  	 var pos=new Array();
+		  	var strIndexOf=strVal.indexOf("a");
+		  	 while(strIndexOf>-1){
+		  	 	 pos.push(strIndexOf);
+                         strIndexOf=strVal.indexOf("a",strIndexOf+1);
+		  	 }
+		  	 console.log(pos)     //0  6  12
+
+
+
+
+
+
+
+
