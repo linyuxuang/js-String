@@ -70,6 +70,7 @@ substring() 用法：stringObj.substring(start, end)
 		  	 console.log(str.substring(2,3))   // l
 	   
 	   
+	   
  indexOf返回字从（左往右）的字符串第一次出现的位置，若没有出现返回-1  
 
 		 var str = "hello world";
