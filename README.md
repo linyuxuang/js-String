@@ -178,16 +178,19 @@ replace()   这个方法提供两个参数
 	 
 	      	  var text="yu cat bat sat hat lopp";
           	  var pat=text.replace('at',"oop");
-          	  console.log(pat)    输出  yu coop bat sat hat lopp
+          	    console.log(pat)    输出  yu coop bat sat hat lopp
 		  
 		  
 		 var text="yu cat bat sat hat lopp";
-          	 var pat=text.replace(/at/g,"oop");   
+          	 var pat=text.replace(/.at/g,"oop");   
 		    console.log(pat)   输出   yu coop boop soop hoop lopp 
 		    
 		  
 		  
-	     
+	        var text="yu cat bat sat hat lopp";
+          	  var pat=text.replace(/.at/g,"lin($1)");  
+
+          	  console.log(pat)   输出    yu lin($1) lin($1) lin($1) lin($1) lopp
 	 
 	 
 	 
