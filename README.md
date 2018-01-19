@@ -194,11 +194,22 @@ replace()   这个方法提供两个参数
 	 
 	 
 	 
+split()  这个方法将指定的分隔符 将一个字符串分割成多个字符串，并将结果放在一个数组中	 
 	 
 	 
 	 
+	         var text="yu ,cat ,bat ,sat, hat, lopp";
+          	  var pat=text.split(",");
+          	  console.log(pat);    //输出   ["yu ", "cat ", "bat ", "sat", " hat", " lopp"]
+
+
 	 
+	        var text="yu ,cat ,bat ,sat, hat, lopp";
+          	  var pat=text.split(",",2);
+          	  console.log(pat);    //输出   ["yu ", "cat "]
 	 
+	    
+	     
 	 
 	 
 	 
