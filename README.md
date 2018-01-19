@@ -128,33 +128,42 @@ toLocaleUpperCase()转大写                toLocaleLowerCase() 转小写
 
 match()  返回是一个数组     在字符串该方法，本质上与调用RegExp的exec()方法相同 ，match() 方法接受一个参数
 
-                 var text="cat bat sat hat lopp";
-          	  var pat=/.at/g;      这里的代表查找全局at,
-          	  var matches=text.match(pat);
-		  console.log(matches[1])  输出  cat
-          	  console.log(matches[2])  输出 bat
 
-       如果不加 “g”    这里只能查到第一个带 at 的字符
-        
-	     var text="cat bat sat hat lopp";
-          	  var pat=/.at/;  
-          	  var matches=text.match(pat);
-          	  console.log(matches[0])  输出 bat
-                   console.log(matches[1])  输出   undefined 
+
+
+
+						 var text="cat bat sat hat lopp";
+						  var pat=/.at/g;      这里的代表查找全局at,
+						  var matches=text.match(pat);
+						  console.log(matches[1])  输出  cat
+						  console.log(matches[2])  输出 bat
+
+					      如果不加 “g”    这里只能查到第一个带 at 的字符
+
+					     var text="cat bat sat hat lopp";
+						  var pat=/.at/;  
+						  var matches=text.match(pat);
+						  console.log(matches[0])  输出 bat
+						   console.log(matches[1])  输出   undefined 
+				   
+				   
+				   
 
 search() 方法返回字符串中第一个匹配的索引(下标)  如果没有找到 ， 就返回 -1； 该方法始终都是从字符串开头向后查找
 
-         该方法就是添加 “g”全局 他也只会查找第一个
-  	  var text="cat bat sat hat lopp";
-          	  var pat=/.at/g;
-          	  var matches=text.search(pat);
-          	  console.log(matches)     输出 0
 
 
-  	   var text="yu cat bat sat hat lopp";
-          	  var pat=/.at/g;
-          	  var matches=text.search(pat);
-          	  console.log(matches)   输出  3 (就是cat)
+				 该方法就是添加 “g”全局 他也只会查找第一个
+				  var text="cat bat sat hat lopp";
+					  var pat=/.at/g;
+					  var matches=text.search(pat);
+					  console.log(matches)     输出 0
+
+
+				   var text="yu cat bat sat hat lopp";
+					  var pat=/.at/g;
+					  var matches=text.search(pat);
+					  console.log(matches)   输出  3 (就是cat)
 
 
 replace()   这个方法提供两个参数 
