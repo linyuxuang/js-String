@@ -105,9 +105,14 @@ indexOf()与lastIndexOf()有两个参数时     注意看下面
 		  	 console.log(pos)     //0  6  12
 
 
+trim() 删除字符串左右空格          trimLeft()删除左边空格           trimRight()删除右边空格
 
 
-
+			var str="    linyuxuan     ";
+			
+			 var Trim=str.trim();
+			 console.log(str);    输出  "    linyuxuan     "
+			 console.log(Trim);  输出 "linyuxuan"
 
 
 
