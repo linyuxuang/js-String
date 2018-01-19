@@ -114,5 +114,11 @@ trim() 删除字符串左右空格          trimLeft()删除左边空格  
 			 console.log(str);    输出  "    linyuxuan     "
 			 console.log(Trim);  输出 "linyuxuan"
 
+toLocaleUpperCase()转大写                toLocaleLowerCase() 转小写
 
 
+		var str="linyuxuan";
+          	console.log(str.toLocaleUpperCase())    // 输出 LINYUXUANPP
+          	
+          	 var str2="LINYUXUANPP";
+          	 console.log(str2.toLocaleLowerCase())   //输出 linyuxuanpp
